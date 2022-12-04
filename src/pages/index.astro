@@ -1,0 +1,32 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main>
+      <h1>👋 Hi, this is keigomichi!</h1>
+      <p>
+        This is a temporary blog site created for the 2022 advent
+        calendar! The original website is <a href="https://keigomichi.dev"
+          >here</a
+        >.
+      </p>
+      <p>
+        This site was created using <a
+          href="https://github.com/withastro/astro/tree/main/examples/blog"
+          >this template</a
+        >.
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>
